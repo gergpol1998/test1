@@ -20,5 +20,6 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/tasks/', views.TaskList.as_view()),
+    path('api/tasks/create', views.TaskListCreate.as_view()),
     path('api/tasks/<int:pk>', views.TaskDetail.as_view()),
 ]
